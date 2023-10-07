@@ -13,7 +13,7 @@ def pagina_bienvenida():
     left_col, mid_col, right_col = st.columns(3)
 
     # Muestra la imagen en la columna central
-    mid_col.image("Nasa.jpg", width=200)
+    mid_col.image("Nasa.png", width=200)
     st.title("Bienvenido a la página de la NASA sobre la Reconexión Magnética de la Tierra")
     st.write("La reconexión magnética es un proceso importante en la interacción entre el viento solar y el campo magnético de la Tierra.")
     st.header("Cómo afecta al clima de la Tierra")
@@ -32,7 +32,10 @@ def pagina_contacto():
     st.title("Contáctenos")
     # Agrega información de contacto si lo deseas
 
-# Menú de opciones
+# Título del menú
+st.sidebar.markdown("Bienvenido al Menu")
+
+# Elementos del menú
 opciones = ["Bienvenida", "Información", "Contacto"]
 eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 
